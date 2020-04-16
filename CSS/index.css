@@ -151,6 +151,14 @@ h1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    flex-direction: row;
+}
+
+.header .menu .menu-shrink {
+    font-size: 2.5rem;
+    transform: rotate(45deg);
+    margin: 0;
+    display: none;
 }
 
 .waves {
@@ -775,7 +783,6 @@ h1 {
         margin: 4rem 1rem 0 1rem;
     }
 }
-
 
 @media ( min-width: 1900px) {
     :root {

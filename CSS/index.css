@@ -527,13 +527,16 @@ h1 {
     margin-right: 15px;
 }
 
-.view--three .projects--container .container .project .project-details-buttons>.button {
+.view--three .projects--container .container .project .project-details-buttons .a> .button {
     width: 110px;
 }
 
 .view--three .projects--container .container .project .project-details-buttons a img {
     height: 30px;
     width: 30px;
+}
+.project-details-buttons a:visited, a:active, a:link{
+    text-decoration: none;
 }
 
 .footer {
@@ -770,6 +773,8 @@ h1 {
     height: 100%;
     overflow: hidden;
 }
+
+
 
 @media ( min-width: 1600px) {
     :root {

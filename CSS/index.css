@@ -659,6 +659,10 @@ h1 {
     transition: all .4s ease-out;
 }
 
+.dropdown .avatar{
+    object-fit: cover;
+}
+
 .dropdown--visible {
     -webkit-clip-path: circle(162% at 100% 10%);
     clip-path: circle(142% at 100% 10%);
@@ -725,6 +729,7 @@ h1 {
     width: 18rem;
     height: 18rem;
     object-fit: contain;
+    border-radius: 30px;
 }
 
 .dropdown--contactMeContainer-top .contact-information>* {

@@ -10,6 +10,7 @@
     --btn-down-end: #717FF4;
     --root-font-size: 10px;
     --button-bg-gradient: linear-gradient(199.05deg, #F3B647 28.55%, #FD9E7F 69.94%);
+    --botton-bg-disbled: linear-gradient(90deg, #7D7D7D -0.22%, #A49D9D 99.78%);
     --button-bg-gradient-hover: linear-gradient(199.05deg, #FFAA13 28.55%, #FF825A 69.94%);
     --button-bg-gradient-active: linear-gradient(199.05deg, #FFCC70 28.55%, #FF9D7E 69.94%);
     --seperator-gradient: linear-gradient(268.41deg, #F3B647 28.55%, #FD9E7F 69.94%);
@@ -445,6 +446,20 @@ h1 {
     background: var(--button-bg-gradient-hover);
 }
 
+.disabled {
+    background: var(--botton-bg-disbled);
+    color: var(--main-bg-color);
+    width: 170px;
+    box-shadow: 4px 4px 5px rgba(58, 58, 58, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 35px;
+    cursor: pointer;
+}
+
 .button:active {
     background: var(--button-bg-gradient-active);
 }
@@ -532,7 +547,7 @@ h1 {
     margin-right: 15px;
 }
 
-.view--three .projects--container .container .project .project-details-buttons .a> .button {
+.view--three .projects--container .container .project .project-details-buttons .a>.button {
     width: 110px;
 }
 
@@ -540,7 +555,8 @@ h1 {
     height: 30px;
     width: 30px;
 }
-.project-details-buttons a:visited, a:active, a:link{
+
+.project-details-buttons a:visited, a:active, a:link {
     text-decoration: none;
 }
 
@@ -659,7 +675,7 @@ h1 {
     transition: all .4s ease-out;
 }
 
-.dropdown .avatar{
+.dropdown .avatar {
     object-fit: cover;
 }
 
@@ -789,8 +805,6 @@ h1 {
     height: 100%;
     overflow: hidden;
 }
-
-
 
 @media ( min-width: 1600px) {
     :root {
